@@ -1,0 +1,273 @@
+/*formatting for all elements in the body*/
+body {
+	background-color: #f0fff0;
+	font-family: Verdana, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+
+/*header formatting - bright green*/
+header {
+	background-color: #4dea4d;
+}
+
+/*title formatting*/
+h1 {
+	text-align: center;
+}
+
+/*space above main title*/
+br#pre-title {
+	line-height: 1px;
+}
+
+
+/*nav bar - darker green*/
+nav {
+	background-color: #329732;
+	text-align: center;
+}
+
+/*navigation bar formatting*/
+ul.nav {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	width: 60%;
+	margin: auto;
+}
+
+/*each item in the navigation bar*/
+ul.nav li {
+	display: inline;
+	margin-right: 8px;
+}
+
+/*links in navigation bar*/
+.nav li a {
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none; 
+	color: black;
+	font-size: 18px;
+	transition-duration: 0.4s;
+}
+
+/*hovering over a navigation bar link*/
+.nav li a:hover {
+	background-color: #4dea4d;
+}
+
+
+/*main part of site - everything after header (and before footer)*/
+main {
+	width: 75%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+/*indentation for text paragraphs*/
+div.text p {
+	text-indent: 50px;
+}
+
+
+/*form navigation bar formatting*/
+ul.form-nav {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+/*form nagivation bar items*/
+ul.form-nav li {
+	display: inline;
+}
+
+/*form nav bar links*/
+.form-nav li a {
+	display: inline-block;
+	text-decoration: none; 
+	
+	color: #8c8c8c;
+	font-size: 14px;
+	
+	padding: 5px;
+	border: 1px solid #8c8c8c;
+	border-radius: 2px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+}
+
+/*form nav bar current tab*/
+.form-nav li a#current {
+	background-color: #4dea4d;
+}
+
+/*form nav bar past tab*/
+.form-nav li a#past {
+	background-color: #d1fad1;
+}
+
+/*all form items*/
+.form-item {
+	/*width: 400px;*/
+	/*margins scale according to viewport width*/
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+/*input box formatting*/
+input {
+	width: 150px;
+	box-sizing: border-box;
+
+	/* Match form nav borders */
+	border: 1px solid #8c8c8c;
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+
+input:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+/*small grey text for subtitles in form*/
+.subtitle {
+	color: #8c8c8c;
+	font-size: 14px;
+}
+
+
+/*next page form navigation button*/
+button.form-next {
+	/*all form nav buttons*/
+	border: none;
+	padding: 7px;
+	text-align: center;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	
+	background-color: #4dea4d;
+}
+
+/*previous page form navigation button*/
+button.form-back {
+	/*all form nav buttons*/
+	border: none;
+	padding: 7px;
+	text-align: center;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	
+	background-color: #a3f5a3;
+	margin-right: 10px;
+}
+
+/*submit form button*/
+button.form-submit {
+	/*all form nav buttons*/
+	border: none;
+	padding: 7px;
+	text-align: center;
+	float: right;
+	font-size: 16px;
+	cursor: pointer;
+	
+	background-color: #329732;
+	text-color: 
+	margin-right: 10px;
+}
+
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*table formatting for slider buttons*/
+tr.skills {
+	height: 18px;
+	text-align: left;
+	vertical-align: top;
+}
+
+/*set table column width for slider column - only needed on first element*/
+.long {
+	width: 300px;
+}
+
+
+/*slider form element for skills - from w3schools*/
+.slider {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 12px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #329732;
+	cursor: pointer;
+}
+.slider::-moz-range-thumb {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #329732;
+	cursor: pointer;
+}
+
+/*preferences radio buttons*/
+.radio {
+	/*hide radio buttons*/
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+img.radio-img {
+	cursor: pointer;
+	width: 35px;
+}
+
+/*preferences button buttons*/
+img.button-img {
+	cursor: pointer;
+	width: 35px;
+}
+
+button.img-button {
+	border: 0;
+	width: 35px;
+	height: 35px;
+	background: none;
+}
+
+/*preferences table row height*/
+tr.pref {
+	height: 40px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+
+
+
+
