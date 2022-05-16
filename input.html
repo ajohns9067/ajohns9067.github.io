@@ -1,0 +1,295 @@
+<html>
+<!--data input webpage-->
+<head>
+	<title>Sims 4 Career Picker Tool</title>
+	<link href="Career_tool_style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<header>
+		<br id="pre-title">
+		<h1>Sims 4 Career Picker Tool</h1>
+		<nav>
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="input.html">Input Data</a></li>
+				<li><a href="about.html">About the Tool</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+	<form action="php file" method="post">
+	
+	<!--Select Packs Form Section-->
+	<ul class="form-nav" id="packs">
+		<li><a href="#packs" id="current">Packs</a></li>
+		<li><a href="#aspiration">Aspiration</a></li>
+		<li><a href="#traits">Traits</a></li>
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#preferences">Likes/Dislikes</a></li>
+		<li><a href="#review">Review & Submit</a></li>
+	</ul>
+	
+	<div class="form-item">
+		<label>Sim's Name (optional): </label>
+		<input type="text" placeholder="Bob Pancakes" name="name"> 
+		<br>
+		<label>Select the packs you DON'T own:</label>
+		<p class="subtitle">Disable Packs:</p>
+		<!--packs, hover for names-->
+		<button type="button" class="form-next">Next</button>
+	</div>
+	<br><br>
+	
+	
+	<!--Select Aspiration Form Section-->
+	<ul class="form-nav" id="aspiration">
+		<li><a href="#packs" id="past">Packs</a></li>
+		<li><a href="#aspiration" id="current">Aspiration</a></li>
+		<li><a href="#traits">Traits</a></li>
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#preferences">Likes/Dislikes</a></li>
+		<li><a href="#review">Review & Submit</a></li>
+	</ul>
+	
+	<div class="form-item">
+		<label>Select your Sim's aspiration: </label>
+		
+		<!--aspirations, hover for aspiration names-->
+		<button type="button" class="form-next">Next</button>
+		<button type="button" class="form-back">Back</button>
+	</div>
+	<br><br>
+	
+	
+	<!--Select Traits Form Section-->
+	<ul class="form-nav" id="traits">
+		<li><a href="#packs" id="past">Packs</a></li>
+		<li><a href="#aspiration" id="past">Aspiration</a></li>
+		<li><a href="#traits" id="current">Traits</a></li>
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#preferences">Likes/Dislikes</a></li>
+		<li><a href="#review">Review & Submit</a></li>
+	</ul>
+	
+	<div class="form-item">
+		<label>Select your Sim's traits: </label>
+		
+		<!--traits hexagons-->
+		<p class="subtitle">Emotional traits</p>
+		<!--options-->
+		<p class="subtitle">Hobby traits</p>
+		<!--options-->
+		<p class="subtitle">Lifestyle traits</p>
+		<!--options-->
+		<p class="subtitle">Social traits</p>
+		<!--options-->
+		
+		<label>Select other traits your Sim may have:</label>
+		<!--tooltip about other traits and where to find them-->
+		<!--other traits, maybe with subtitles, and/or hover for names-->
+		<br><br>
+		
+		<button type="button" class="form-next">Next</button>
+		<button type="button" class="form-back">Back</button>
+	</div>
+	<br><br>
+	
+	
+	<!--Select Skills Form Section-->
+	<ul class="form-nav" id="skills">
+		<li><a href="#packs" id="past">Packs</a></li>
+		<li><a href="#aspiration" id="past">Aspiration</a></li>
+		<li><a href="#traits" id="past">Traits</a></li>
+		<li><a href="#skills" id="current">Skills</a></li>
+		<li><a href="#preferences">Likes/Dislikes</a></li>
+		<li><a href="#review">Review & Submit</a></li>
+	</ul>
+	
+	<div class="form-item">
+		<label>Select your Sim's skills: </label>
+		<br><br>
+		
+		<!--skills-->
+		<table>
+			<tr class="skills">
+				<td><!--img--></td>
+				<td><p>Charisma</p></td>
+				<td><div class="long"><input type="range" class="slider" name="skill-charisma" min="0" max="10" value="0"></div></td>
+				<td><p>0</p></td>
+			</tr>
+			<tr class="skills">
+				<td><!--img--></td>
+				<td><p>Comedy</p></td>
+				<td><input type="range" class="slider" name="skill-comedy" min="0" max="10" value="0"></td>
+				<td><p>0</p></td>
+			</tr>
+			<tr class="skills">
+				<td><!--img--></td>
+				<td><p>DJ Mixing</p></td>
+				<td><input type="range" class="slider" name="skill-dj" min="0" max="10" value="0"></td>
+				<td><p>0</p></td>
+			</tr>
+			<!--and so on-->
+		
+		</table>
+		
+		<button type="button" class="form-next">Next</button>
+		<button type="button" class="form-back">Back</button>
+	</div>
+	<br><br>
+	
+	
+	<!--Select Preferences Form Section-->
+	<ul class="form-nav" id="preferences">
+		<li><a href="#packs" id="past">Packs</a></li>
+		<li><a href="#aspiration" id="past">Aspiration</a></li>
+		<li><a href="#traits" id="past">Traits</a></li>
+		<li><a href="#skills" id="past">Skills</a></li>
+		<li><a href="#preferences" id="current">Likes/Dislikes</a></li>
+		<li><a href="#review">Review & Submit</a></li>
+	</ul>
+	
+	<div class="form-item">
+		<label>Select your Sim's Likes and Dislikes: </label>
+		<!--tooltip about where to find preferences-->
+		<br><br>
+		
+		<!--preferences-->
+		<table>
+			<tr class="pref">
+				<td><!--img--></td>
+				<td><p>Acting</p></td>
+				<!--option 1: radio buttons-->
+				<td><label>
+					<input type="radio" class="radio" name="like-acting">
+					<img class="radio-img" src="images/preferences/like-unselected.png">
+				</label></td>
+				<td><label>
+					<input type="radio" class="radio" name="dislike-acting">
+					<img class="radio-img" src="images/preferences/dislike-unselected.png">
+				</label></td>
+			</tr>
+			<tr class="pref">
+				<td><!--img--></td>
+				<td><p>Baking</p></td>
+				<!--option 2: button-->
+				<td><button type="button" class="img-button" name="like-baking" ><img class="button-img" src="images/preferences/like-unselected.png"></button></td>
+				<td><button type="button" class="img-button" name="like-baking" ><img class="button-img" src="images/preferences/dislike-unselected.png"></button></td>
+			</tr>
+			<tr class="pref">
+				<td><!--img--></td>
+				<td><p>Bowling</p></td>
+				<!--option 3: just img, all in js-->
+				<td><img class="radio-img" src="images/preferences/like-unselected.png"></td>
+				<td><img class="radio-img" src="images/preferences/dislike-unselected.png"></td>
+			</tr>
+			<!--and so on-->
+		
+		</table>
+		
+		<button type="button" class="form-next">Next</button>
+		<button type="button" class="form-back">Back</button>
+	</div>
+	<br><br>
+	
+	
+	<!--Review and Submit Form Section-->
+	<ul class="form-nav" id="review">
+		<li><a href="#packs" id="past">Packs</a></li>
+		<li><a href="#aspiration" id="past">Aspiration</a></li>
+		<li><a href="#traits" id="past">Traits</a></li>
+		<li><a href="#skills" id="past">Skills</a></li>
+		<li><a href="#preferences" id="past">Likes/Dislikes</a></li>
+		<li><a href="#review" id="current">Review & Submit</a></li>
+	</ul>
+	
+	<div class="form-item">
+		<label>Review your Sim's info: </label>
+		
+		<!--hexagon with aspiration and traits -->
+		
+		
+		<p>Other traits:</p>
+		<!--other traits-->
+		<!--maybe default is none:-->
+		<p class="subtitle">None</p>
+		
+		
+		<p>Skills</p>
+		<table>
+			<tr class="skills">
+				<td><!--img--></td>
+				<td><p>Charisma</p></td>
+				<td><p>0</p></td>
+			</tr>
+			<tr class="skills">
+				<td><!--img--></td>
+				<td><p>Comedy</p></td>
+				<td><p>0</p></td>
+			</tr>
+			<tr class="skills">
+				<td><!--img--></td>
+				<td><p>DJ Mixing</p></td>
+				<td><p>0</p></td>
+			</tr>
+			<!--and so on-->
+		
+		</table>
+		
+		
+		<p>Like and Dislikes</p>
+		<table>
+			<tr class="pref">
+				<td><!--img--></td>
+				<td><p>Acting</p></td>
+				<td><img class="radio-img" src="images/preferences/like.png"></td>
+				<td><img class="radio-img" src="images/preferences/dislike-unselected.png"></td>
+			</tr>
+			<tr class="pref">
+				<td><!--img--></td>
+				<td><p>Baking</p></td>
+				<td><img class="radio-img" src="images/preferences/like.png"></td>
+				<td><img class="radio-img" src="images/preferences/dislike-unselected.png"></td>
+			</tr>
+			<tr class="pref">
+				<td><!--img--></td>
+				<td><p>Bowling</p></td>
+				<td><img class="radio-img" src="images/preferences/like-unselected.png"></td>
+				<td><img class="radio-img" src="images/preferences/dislike.png"></td>
+			</tr>
+			<!--and so on-->
+		
+		</table>
+		
+		
+		<button type="submit" class="form-submit">Submit</button>
+		<button type="button" class="form-back">Back</button>
+	</div>
+	
+	</form>
+	
+	<br><br>
+	
+	
+	<!--<form action="my-handling-form-page" method="post">
+		<ul>
+			<li>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="user_name">
+			</li>
+			<li>
+				<label for="mail">E-mail:</label>
+				<input type="email" id="mail" name="user_email">
+			</li>
+			<li>
+				<label for="msg">Message:</label>
+				<textarea id="msg" name="user_message"></textarea>
+			</li>
+		</ul>
+	</form>-->
+
+	</main>
+</body>
+</html>
